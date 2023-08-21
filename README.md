@@ -14,7 +14,7 @@ Minor code changes and tweaks.
 
 1. Extract the archive and put it in the folder you want
 
-2. Prepare your .env file there with database connection and other settings
+2. Prepare your .env file there with database connection and other settings. Run php artisan key:generate to get a key for your .env file
 
 3. Run "composer install" command
 
