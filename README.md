@@ -1,14 +1,7 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 ## Laravel sales-dashboard update using laravel 10
-A sales dashboard demo developed by @wmushtaq and updated and tweaked to laravel 10 by @3mpj
-
-## Updates
-Fideloper proxy package removed, because laravel now has trusted proxies shipping with it.
-
-Minor code changes and tweaks.
-
-
+A sales dashboard demo
 
 ## Installation
 
