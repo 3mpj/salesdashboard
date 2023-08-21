@@ -6,7 +6,7 @@ A sales dashboard demo developed by @wmushtaq and updated and tweaked to laravel
 ## Updates
 Fideloper proxy package removed, because laravel now has trusted proxies shipping with it.
 
-Minor changes.
+Minor code changes and tweaks.
 
 
 
