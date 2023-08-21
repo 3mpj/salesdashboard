@@ -24,7 +24,7 @@ Minor code changes and tweaks.
 
 6. Run "php artisan key:generate" to generate new application Key.
 
-7. Run "php artisan serve" command.
+7. Run "php artisan serve" command..
 
 ## Features
 
