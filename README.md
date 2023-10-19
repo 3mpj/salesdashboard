@@ -1,5 +1,3 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 ## Laravel sales-dashboard update using laravel 10
 A sales dashboard demo
 
@@ -7,17 +5,15 @@ A sales dashboard demo
 
 1. Extract the archive and put it in the folder you want
 
-2. Prepare your .env file there with database connection and other settings. Run php artisan key:generate to get a key for your .env file
+2. Run "composer install" command
 
-3. Run "composer install" command
+3. Run "php artisan migrate --seed" command.
 
-4. Run "php artisan migrate --seed" command.
+4. Run "copy .env.example .env" to generate a new .env file.
 
-5. Run "copy .env.example .env" to generate a new .env file.
+5. Run "php artisan key:generate" to generate new application Key.
 
-6. Run "php artisan key:generate" to generate new application Key.
-
-7. Run "php artisan serve" command.
+6. Run "php artisan serve" command.
 
 ## Features
 

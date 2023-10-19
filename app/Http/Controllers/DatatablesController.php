@@ -43,17 +43,22 @@ class DatatablesController extends Controller
      * @return json data
      */
     public function getChart(Request $request)
-    {
-        $query = Sale::with('package', 'customer');
-        $query = $query->select(DB::raw('SUM(packages.price) as `total`'), DB::raw("DATE_FORMAT(sales.created_at, '%m-%Y') month_year"),  DB::raw('YEAR(sales.created_at) year, MONTH(sales.created_at) month'));
-        $query = $query->join('packages', 'sales.package_id', '=', 'packages.id');
-        $query = Filters::apply($query, $request);
-        $query = $query->groupby('year','month');
+{
+    $query = Sale::with('package', 'customer');
+    $query = $query->select(
+        DB::raw('SUM(packages.price) as total'),
+        DB::raw("DATE_FORMAT(sales.created_at, '%m-%Y') as month_year"),
+        DB::raw('YEAR(sales.created_at) as year'),
+        DB::raw('MONTH(sales.created_at) as month')
+    );
+    $query = $query->join('packages', 'sales.package_id', '=', 'packages.id');
+    $query = Filters::apply($query, $request);
+    $query = $query->groupBy('year', 'month', 'month_year');
 
-        $data = $query->get();
+    $data = $query->get();
 
-        return json_encode($data);
-    }
+    return json_encode($data);
+}
 
     /**
      * Process ajax request for stats

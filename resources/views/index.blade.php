@@ -88,11 +88,11 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <div class="alert alert-info text-center"><i class="fas fa-info-circle"></i> Sales Dashboard Demo - Created by <a href="#"> </a> - Source code available on <a href="#">GitHub</a></div>
+          
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+            <h1 class="h3 mb-0 text-gray-800">Vendor Dashboard</h1>
             <form method="POST" id="filters_form">
                 <input type="text" name="date" class="form-control form-control-sm border border-light date_range" style="width: 200px" placeholder="Select Date Range">
             </form>
